@@ -1,0 +1,49 @@
+300 epochs completed in 2.405 hours.
+Optimizer stripped from runs\train\exp\weights\last.pt, 22.6MB
+Optimizer stripped from runs\train\exp\weights\best.pt, 22.6MB
+
+Validating runs\train\exp\weights\best.pt...
+Ultralytics YOLOv8.0.203  Python-3.8.10 torch-1.9.0+cu111 CUDA:0 (NVIDIA GeForce RTX 3090, 24575MiB)
+YOLOv8s-attention-SE summary (fused): 175 layers, 11176928 parameters, 0 gradients, 28.6 GFLOPs
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 15/15 [00:02
+                   all        469        750      0.792      0.501      0.563      0.472
+   Fast food container        469         20          1      0.435       0.76      0.642
+            Book paper        469          7      0.378      0.143      0.202      0.195
+            Power bank        469         21      0.895      0.857      0.934      0.885
+         Leftover food        469         34      0.857       0.53      0.672      0.404
+                   Bag        469         28      0.784      0.929       0.91        0.8
+             Trash bin        469          1          1          0     0.0302     0.0241
+   Plastic kitchenware        469          2          1          0          0          0
+        Plastic dishes        469         12      0.519      0.417      0.373      0.306
+       Plastic hangers        469          5          1      0.558      0.673      0.358
+           Dry battery        469          8      0.869       0.83      0.946      0.696
+         Plug and wire        469         55      0.594      0.266      0.373      0.287
+           Old clothes        469         24      0.893      0.917      0.977      0.921
+          Aluminum can        469         31      0.809      0.822      0.926      0.821
+                Pillow        469         38      0.835      0.605      0.824      0.706
+  Fruit peel and flesh        469         36      0.837      0.833      0.866      0.772
+                 Towel        469          5      0.461        0.4      0.402       0.34
+             Plush toy        469          3          1          0      0.343      0.143
+  Contaminated plastic        469         46       0.82      0.496      0.534      0.466
+    Contaminated paper        469          3          1          0          0          0
+            Toiletries        469         44      0.932      0.886      0.927      0.883
+        Cigarette butt        469          6      0.685      0.833      0.813      0.657
+          Glass dishes        469         32      0.818      0.701      0.769      0.725
+            Chopsticks        469          7      0.731      0.286      0.386      0.238
+         Cardboard box        469         22      0.662      0.179      0.225      0.156
+             Paper bag        469         29      0.903      0.897      0.931      0.851
+            Flower pot        469          5          1          0     0.0755     0.0449
+Vegetable stalks and leaves        469         11      0.649      0.364      0.427      0.306
+              Eggshell        469         12      0.854      0.833      0.908      0.746
+      Seasoning bottle        469         15      0.756      0.826       0.82      0.686
+      Expired medicine        469         47       0.87      0.851      0.846      0.805
+     Metal kitchenware        469          7          1          0     0.0298     0.0111
+          Metal dishes        469          2          0          0    0.00728    0.00583
+                   Pot        469         31      0.837      0.774      0.821      0.708
+        Ceramic dishes        469         60      0.791       0.63      0.681      0.581
+                 Shoes        469          7      0.797      0.286      0.291      0.241
+     Edible oil barrel        469          4      0.454       0.25      0.132      0.132
+       Beverage bottle        469         21      0.841      0.756      0.816      0.793
+       Beverage carton        469          9      0.952      0.667       0.75      0.602
+Speed: 0.2ms preprocess, 1.2ms inference, 0.0ms loss, 0.6ms postprocess per image
+Results saved to runs\train\exp

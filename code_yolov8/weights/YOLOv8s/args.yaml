@@ -1,0 +1,158 @@
+task: detect
+mode: train
+model: null
+data: ultralytics/cfg/datasets/VOC_garbage.yaml
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+# path: C:/Users/14794/yolov8/data/data/yolo
+# train: # train images (relative to 'path')  16551 images
+#   - train
+# val: # val images (relative to 'path')  4952 images
+#   - val
+# test: # test images (optional)
+#   - test
+train: yolov8/data/data/yolo/train
+val: yolov8/data/data/yolo/val
+names:
+  0: Fast food container
+  1: Book paper
+  2: Power bank
+  3: Leftover food
+  4: Bag
+  5: Trash bin
+  6: Plastic kitchenware
+  7: Plastic dishes
+  8: Plastic toys
+  9: Plastic hangers
+  10: Large bone
+  11: Dry battery
+  12: Express delivery bag
+  13: Plug and wire
+  14: Old clothes
+  15: Aluminum can
+  16: Pillow
+  17: Fruit peel and flesh
+  18: Towel
+  19: Plush toy
+  20: Contaminated plastic
+  21: Contaminated paper
+  22: Toiletries
+  23: Cigarette butt
+  24: Toothpick
+  25: Glass dishes
+  26: Cutting board
+  27: Chopsticks
+  28: Cardboard box
+  29: Paper bag
+  30: Flower pot
+  31: Tea residue
+  32: Vegetable stalks and leaves
+  33: Eggshell
+  34: Seasoning bottle
+  35: Ointment
+  36: Expired medicine
+  37: Wine bottle
+  38: Metal kitchenware
+  39: Metal dishes
+  40: Metal food cans
+  41: Pot
+  42: Ceramic dishes
+  43: Shoes
+  44: Edible oil barrel
+  45: Beverage bottle
+  46: Beverage carton
+  47: Fish bones
+nc: 48
+epochs: 300
+patience: 100
+batch: 4
+imgsz: 640
+save: true
+save_period: -1
+cache: null
+device: ''
+workers: 1
+project: runs\train
+name: exp
+exist_ok: false
+pretrained: true
+optimizer: SGD
+verbose: true
+seed: 0
+deterministic: true
+single_cls: false
+rect: false
+cos_lr: false
+close_mosaic: 0
+resume: ''
+amp: true
+fraction: 1.0
+profile: false
+freeze: None
+overlap_mask: true
+mask_ratio: 4
+dropout: 0.0
+val: true
+split: val
+save_json: false
+save_hybrid: false
+conf: null
+iou: 0.7
+max_det: 300
+half: false
+dnn: false
+plots: true
+source: null
+show: false
+save_txt: false
+save_conf: false
+save_crop: false
+show_labels: true
+show_conf: true
+vid_stride: 1
+stream_buffer: false
+line_width: null
+visualize: false
+augment: false
+agnostic_nms: false
+classes: null
+retina_masks: false
+boxes: true
+format: torchscript
+keras: false
+optimize: false
+int8: false
+dynamic: false
+simplify: false
+opset: null
+workspace: 4
+nms: false
+lr0: 0.01
+lrf: 0.01
+momentum: 0.937
+weight_decay: 0.0005
+warmup_epochs: 3.0
+warmup_momentum: 0.8
+warmup_bias_lr: 0.1
+box: 7.5
+cls: 0.5
+dfl: 1.5
+pose: 12.0
+kobj: 1.0
+label_smoothing: 0.0
+nbs: 64
+hsv_h: 0.015
+hsv_s: 0.7
+hsv_v: 0.4
+degrees: 0.0
+translate: 0.1
+scale: 0.5
+shear: 0.0
+perspective: 0.0
+flipud: 0.0
+fliplr: 0.5
+mosaic: 1.0
+mixup: 0.0
+copy_paste: 0.0
+cfg: ultralytics/cfg/default.yaml
+tracker: botsort.yaml
+save_dir: runs\train\exp

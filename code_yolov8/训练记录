@@ -1,0 +1,20 @@
+
+
+
+
+# yolov8s
+python ./train.py --epochs 300 --yaml ultralytics/cfg/models/v8/yolov8s.yaml --cfg ultralytics/cfg/default.yaml --data ultralytics/cfg/datasets/VOC_garbage.yaml --weights weights/yolov8s.pt --workers 1 --batch 4
+
+
+# yolov8s-attention-SE.yaml
+python ./train.py --epochs 300 --yaml ultralytics/cfg/models/v8/det_self/yolov8s-attention-SE.yaml --cfg ultralytics/cfg/default.yaml --data ultralytics/cfg/datasets/VOC_garbage.yaml --weights weights/yolov8s.pt --workers 4 --batch 16
+
+
+# 评估
+python ./val.py --data  ultralytics/cfg/datasets/VOC_garbage.yaml --weight ../weights/yolov8s/weights/best.pt
+
+
+
+# UI.ui转UI.py
+pyuic5 -x UI.ui -o UI.py
+

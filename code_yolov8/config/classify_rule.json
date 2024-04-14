@@ -1,0 +1,58 @@
+{
+    "可回收物": [
+        "Power bank",
+        "Bag",
+        "Toiletries",
+        "Plastic toys",
+        "Plastic dishes",
+        "Plastic hangers",
+        "Glass dishes",
+        "Metal dishes",
+        "Express delivery bag",
+        "Plug and wire",
+        "Old clothes",
+        "Aluminum can",
+        "Pillow",
+        "Plush toy",
+        "Shoes",
+        "Cutting board",
+        "Cardboard box",
+        "Seasoning bottle",
+        "Wine bottle",
+        "Metal food cans",
+        "Metal kitchenware",
+        "Pot",
+        "Edible oil barrel",
+        "Beverage bottle",
+        "Book paper",
+        "Trash bin",
+        "Plastic kitchenware",
+        "Towel",
+        "Paper bag",
+        "Beverage carton"
+    ],
+    "厨余垃圾": [
+        "Leftover food",
+        "Large bone",
+        "Fruit peel and flesh",
+        "Tea residue",
+        "Vegetable stalks and leaves",
+        "Eggshell",
+        "Fish bones"
+    ],
+    "有害垃圾": [
+        "Dry battery",
+        "Ointment",
+        "Expired medicine"
+    ],
+    "其他垃圾": [
+        "Fast food container",
+        "Contaminated plastic",
+        "Cigarette butt",
+        "Toothpick",
+        "Flower pot",
+        "Ceramic dishes",
+        "Chopsticks",
+        "Contaminated paper"
+    ]
+}

@@ -1,0 +1,22 @@
+
+CONFIG:
+  # 取值 mdb、project，演示时，设置为 project
+  MODE: 'project'
+  # 使用哪个模型，取值 YOLOV8
+  MODEL: 'YOLOV8'
+  # 使用哪个显卡
+  DEVICE: 0
+
+
+YOLOV8:
+  # 模型文件
+  WEIGHT: './weights/yolov8s/weights/best.pt'
+  # 阈值
+  CONF: 0.4
+  # 过滤类别
+  CLASSES: None
+
+
+
+
+

@@ -1,0 +1,19 @@
+// System Architecture
+digraph {
+	node [shape=rectangle]
+	edge [dir=back]
+	UI [label="User Interface (UI)"]
+	FM [label="File and Media Processing Module"]
+	IM [label="Image Recognition Module"]
+	MT [label="Multithreading Processing Module"]
+	DS [label="Data Storage and Export Module"]
+	CM [label="Configuration and Resource Management Module"]
+	Y8 [label="YOLOv8 Model (yolov8.pt)"]
+	UI -> FM
+	FM -> IM
+	IM -> Y8
+	Y8 -> MT
+	MT -> DS
+	DS -> CM
+	CM -> UI
+}
